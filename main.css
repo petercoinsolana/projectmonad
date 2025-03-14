@@ -1,0 +1,137 @@
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url(newbanner.jpg);
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #ebe7e4;
+}
+
+.button-3d {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #6b2aac;
+  background-color: #b0a9b3;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 8px 0 #5f73a6;
+  transition: all 0.2s ease-out;
+}
+.button-3d:hover {
+  box-shadow: 0 4px 0 #5f73a6;
+  transform: translateY(2px);
+  opacity: 0.8;
+}
+
+
+.button-3d:active {
+  box-shadow: none;
+  transform: translateY(8px);
+}
+.button-3d:focus {
+  outline: none;
+}
+.button-3d i {
+  margin-right: 10px;
+}
+
+.button-3d {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.button-3d {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+
+
+
+/* Responsive Media Query */
+@media (min-width: 1200px){
+	.menu ul {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 1200px){
+	
+	.menu ul li {
+		margin-left: 7px;
+		text-align: left;
+		padding-left: 60px;
+	}
+
+	.center .title {
+		font-size: 38px;
+	}
+
+	.center {
+		width: 100%;
+	}
+
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: transparent;
+		top: 10px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+
+	nav ul li{
+		display: block;
+		margin: 20px 0;
+	}
+	
+	nav ul li a{
+		font-size: 20px;
+	}
+	
+	a:hover,a.active{
+		background: none;
+		color: #3bbee3;
+	}
+	
+	#check:checked ~ ul{
+		left: -50px;
+	}
+}
+@media (max-width: 1200px) {
+  .button-3d {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .center {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    width: 100%;
+  }
+}
+
+
+/* Responsive Media Query End */

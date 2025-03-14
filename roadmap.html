@@ -1,0 +1,129 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+<link rel="shortcut icon" type="image/png" href="img/2023_02_24_0qx_Kleki-removebg-preview.png">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+<a href="dungeon.html">
+	<div class="logo"></div>
+</a>
+<style>
+
+html {
+	font-family: "Josefin Sans", sans-serif;
+}
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  /* The rest of the CSS code for .logo remains the same */
+}
+
+body {
+	background-color: #F1F1F1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo {
+  top: 10px;
+  left: 10px;
+  width: 53px;
+  height: 53px;
+  background-image: url('img/logo-removebg-preview\ \(3\).png');
+  background-size: contain;
+  transition: transform 0.2s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+.heading {
+    position: fixed;
+    margin: 6vmin 3vmin;
+    top: 0;
+}
+.card-container {
+	position: relative;
+	width: 80vmin;
+	height: 90vmin;
+}
+.card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px rgb(17 17 17 / 35%);
+    transition: transform 0.35s ease-out;
+    transform: translate(var(--x), var(--y)) scale(0.35) rotate(var(--angle));
+    will-change: transform;
+	cursor: pointer;
+}
+.card:before {
+	content: "";
+	display: block;
+	width: 90%;
+	height: 80%;
+	margin: 5%;
+	background: var(--image) center center no-repeat;
+	background-size: cover;
+	box-shadow: inset 0 0 5px rgba(#222, .35);
+	border-radius: 2px;
+	filter: sepia(.2) brightness(.9) contrast(1.2);
+	transition: opacity .35s ease-out;
+	will-change: opacity;
+}
+.card:after {
+	display: block;
+	content: var(--caption);
+	font-weight: 500;
+	color: #555;
+	font-size: 3vmin;
+	text-align: center;
+}
+.card:hover {
+    transform: scale(1) rotate(0deg);
+    z-index: 1;
+}
+.card:hover:before {
+    opacity: 1;
+}
+@media only screen and (min-width: 200px) and (max-width: 800px), (min-width: 768px) and (max-width: 1024px) {
+.logo {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 2;
+	width: 53px;
+	height: 53px;
+	background-image: url("img/logo-removebg-preview\ \(3\).png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+}
+@media screen and (max-width: 480px) {
+  .heading {
+    margin-top: 30vmin;
+  }
+}
+
+</style>
+
+</head>
+	
+<body>
+
+<h1 class="heading">THE ROADMAP</h1>
+<div class="card-container">
+ <div class="card" style="--image: url('img/pokemon04.jpg'); --angle: -5deg; --x: 5%; --y: 15%; --caption: 'Pokémon - 2009'"></div>
+ <div class="card" style="--image: url('img/pokemon03.jpg'); --angle: -1deg; --x: -10%; --y: -20%; --caption: 'Pokémon - 2001'"></div>
+ <div class="card" style="--image: url('img/pokemon01.jpg'); --angle: -4deg; --x: -20%; --y: 5%; --caption: 'Pokémon - 2004'"></div>
+ <div class="card" style="--image: url('img/pokemon02.jpg'); --angle: 7deg; --x: 10%; --y: -7%; --caption: 'Pokémon - 1999'"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gallery</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="gallery.css">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		
+	</head>
+<body>
+	<a href="dungeon.html">
+    <div class="logo"></div>
+  </a>
+
+<!-- MAIN -->
+<div class="main">
+	<h1>GALLERY</h1>
+	<hr>
+	<br>
+
+	<!-- Tabs Button -->
+	<div id="BtnContainer">
+		<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+		<button class="btn" onclick="filterSelection('Human')"> Human</button>
+		<button class="btn" onclick="filterSelection('Devil')"> Devil</button>
+		<button class="btn" onclick="filterSelection('Spirit')"> Spirit</button>
+	</div>
+	<!-- Tabs Button -->
+
+	<!-- Portfolio Gallery Grid -->
+	<div class="row">
+	
+		<!-- Human column -->
+		<div class="column Human">
+			<div class="content">
+				<img src="img/human1.png" alt="Human" />
+			</div>
+		</div>
+		<div class="column Human">
+			<div class="content">
+				<img src="img/human2.png" alt="Human" />
+			</div>
+		</div>
+		<div class="column Human">
+			<div class="content">
+				<img src="img/human3.png" alt="Human" />
+			</div>
+		</div>
+		<!-- End Human column -->
+		
+		<!-- Devil column -->
+		<div class="column Devil">
+			<div class="content">
+				<img src="img/devil1.png" alt="Devil" />
+			</div>
+		</div>
+		<div class="column Devil">
+			<div class="content">
+				<img src="img/devil2.png" alt="Devil" />
+			</div>
+		</div>
+		<div class="column Devil">
+			<div class="content">
+				<img src="img/devil3.png" alt="Devil" />
+			</div>
+		</div>
+		<!-- End Devil column -->
+	  
+		<!-- Spirit column -->
+		<div class="column Spirit">
+			<div class="content">
+				<img src="img/spirit1.png" alt="Spirit" />
+			</div>
+		</div>
+		<div class="column Spirit">
+			<div class="content">
+				<img src="img/spirit2.png" alt="Spirit" />
+			</div>
+		</div>
+		<div class="column Spirit">
+			<div class="content">
+				<img src="img/spirit3.png" alt="Spirit" />
+			</div>
+		</div>
+		<!-- End Nature column -->
+	
+	</div>
+	<!-- END Portfolio Gallery Grid -->
+
+</div>
+<!-- END MAIN -->
+
+<script src="script.js"></script>
+
+</body>
+</html>

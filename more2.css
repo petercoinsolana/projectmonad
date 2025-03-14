@@ -1,0 +1,161 @@
+body{
+	font-family: "Josefin Sans", sans-serif;
+}
+body {
+	background-color: #f1f1f1;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px;
+	margin-top: 4px;
+}
+.content {
+	margin-top: 60px;
+  max-width: 40%;
+  
+}
+h2 {
+  font-size: 20px;
+}
+
+p { 
+font-size: medium;
+font-family: 'Courier New', Courier, monospace;
+}
+
+.image {
+  flex: 1;
+  text-align: right;
+  position: fixed; /* add this to fix the position of the image */
+  top: 0; /* add this to position the image at the top of the viewport */
+  right: 0; /* add this to position the image at the right side of the viewport */
+  bottom: 0; /* add this to stretch the image vertically to the bottom of the viewport */
+  overflow-y: auto; /* add this to enable vertical scrolling for the image if it overflows the viewport */
+	margin-left: 0;
+	right: -120px;
+}
+
+img {
+  height: 100%; /* set the height of the image to 100% to stretch it vertically to the height of the .image container */
+  display: block; /* add this to remove any default spacing and padding around the image */
+}
+.logo {
+	position: fixed;
+	top: 12px;
+	left: 12px;
+	z-index: 2;
+	width: 53px;
+	height: 53px;
+	background-image: url("img/logo-removebg-preview\ \(3\).png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.logo:hover {
+	transform: scale(1.1); /* increase size by 10% /
+	transition: all 0.3s ease-in-out; / add a smooth transition effect */
+	}
+  .team-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* changed to move the boxes to the left */
+    align-items: center;
+    margin-top: 50px;
+    max-width: 800px; /* added to make the boxes smaller */
+  }
+  
+  .team-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 200px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .team-box img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  .team-box h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .team-box p {
+    font-size: 14px;
+    color: #999;
+  }
+  .team-box img:hover {
+    transform: scale(1.6);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: left;
+  }
+  .content {
+    max-width: 100%;
+		margin-top: 40px;
+  }
+	h2 {
+		font-size: large;
+	}
+	p {
+		font-size: small;
+	}
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    margin-top: 500px; /* add a larger margin-top value to lower the position of the image */
+		right: -230px;
+  }
+  .logo {
+		position: fixed;
+		top: 10px;
+		left: 10px;
+		z-index: 2;
+		width: 53px;
+		height: 53px;
+		background-image: url("img/logo-removebg-preview\ \(3\).png");
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}
+/* Adjust margin for even smaller screens */
+@media screen and (max-width: 480px) {
+  .content {
+    margin: 0 10px;
+  }
+  .content {
+    max-width: 100%;
+		margin-top: 40px;
+  }
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    margin-top: 500px; /* add a larger margin-top value to lower the position of the image */
+		right: -230px;
+  }
+} 
+
+
+	
+
